@@ -5,11 +5,10 @@ import classes from "./page.module.css";
 import { shareMeal } from "@/lib/actions";
 
 import { useFormState } from "react-dom";
+import MealsFormSubmit from "@/components/meals/meal-form-submit";
 
 export default function ShareMealPage() {
 	const [state, formAction] = useFormState(shareMeal, { message: null });
-
-	status.pending;
 
 	return (
 		<>
@@ -50,7 +49,7 @@ export default function ShareMealPage() {
 					</p>
 					<ImagePicker label="your image" name="image" />
 					<p className={classes.actions}>
-						<button type="submit">Share Meal</button>
+						<MealsFormSubmit />
 					</p>
 				</form>
 			</main>
