@@ -2,7 +2,8 @@
 export default function Error() {
 	return (
 		<main className="error">
-			<h1>An error occured</h1>
+			<h1>An error occurred!</h1>
+			<p>Failed to create or see meal.</p>
 		</main>
 	);
 }
